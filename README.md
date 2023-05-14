@@ -12,6 +12,10 @@ dependencies {
 }
 ```
 
+OR
+
+Just copy the `AndroidStringResourceHelper` object into you unit test directory.
+
 Once you have added the dependency, you can use the AndroidStringResourceHelper class in your ViewModel tests:
 
 ```kotlin
@@ -32,6 +36,14 @@ class MyViewModelTest {
         assertEquals("Now you have been located at China", formattedString)
     }
 }
+```
+
+also, you can refer the `StringViewModelTest.kt` file.
+
+```kotlin
+val display = viewModel.display.value as TextForUI
+assertEquals(R.string.user_current_state, display.resId)
+assertEquals("Now you have been located at China.", getString(R.string.user_current_state, *display.args))
 ```
 
 The AndroidStringResourceHelper class can be instantiated with a Context parameter, which is required to access the resources in the test environment.
