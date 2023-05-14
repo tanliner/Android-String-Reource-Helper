@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Resource Helper</string>
+    <string name="title">Welcome</string>
+    <string name="user_current_state">Now you have been %1$s at %2$s.</string>
+    <string name="show_formatted_tips">will show the full formatted string after 2s with \'located\' and \'China\'.</string>
+</resources>
